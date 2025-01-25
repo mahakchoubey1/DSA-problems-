@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array traversing</title>
+    <script>
+        
+       
+
+       
+function insert(){
+    let el=document.getElementById("elem").value;
+    let pos=document.getElementById("pos").value;
+el=parseInt(el);
+
+    let arr=[3,5,66,4,5,78,3];
+//arr.splice(pos,element_to_delete,element);
+arr.splice(4,0,12);
+    
+
+for(let i=arr.length;i>=pos;i--)
+     { if(i==pos)
+        {
+        arr[pos]=el;
+        break;
+}
+      
+      arr[i]=arr[i-1];
+
+
+}
+console.log(arr);
+}
+    </script>
+</head>
+<body>
+   <input type="number" id="pos" placeholder="enter the position to insert the value into an array">
+   <input type="number" id="elem"  placeholder="enter the value to insert into an array">
+   <button onclick="insert()">Enter</button>
+</body>
+</html>
+<!DOCTYPE html>
+
+<!-- function to directly implement the insert logc -->
+ <!--  -->

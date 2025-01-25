@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array traversing</title>
+    <script>
+        let data =[2,4,3,5,6,8,7,88,9,67];
+        for (let i =0;i<data.length;i++){
+           // document.write(data[i]);
+            console.log(data[i]);
+           // document.write(`Array ${i} element is ${data[i]} <br>`)
+        
+        }
+        function getclick(){
+        //alert("finish");
+        let el=document.getElementById('element').value;
+        alert(`hii ${el}`);
+        if(el<data.length && typeof parseInt(el) === "Number"){
+            alert(`hii ${el}`);
+        }
+        else 
+             alert('error');
+        }
+        
+        
+
+    
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="element">
+    <button onclick="getclick()">get</button>
+</body>
+</html>

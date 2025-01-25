@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*let string = document.getElementById("string").value;
+        let stack = [], let  = stack.length, max = string.length;
+        function is_full() {
+            if (top == max)
+                return top == max;
+        }
+        function is_empty() {
+
+            if (top == 0)
+                return top == 0;
+        }
+        function push() {
+
+            if (is_full()) {
+                alert("you cannot add " + value + "  as stack is full ");
+            }
+
+            for (let i = 0; i < max; i++) {
+                stack[i] = string[i];
+                alert(stack[i] + "pushed");
+            }
+
+
+
+        }
+        function revpop() {
+            if (is_empty()) {
+                alert("you cannot pop " + stack.pop() + "element as stack is empty");
+            }
+
+            for (let i = 0; i < max; i++) {
+                string[i] = stack.pop();
+                alert(string[i] + "popped ")
+
+            }
+
+        }
+        function display1() {
+            let h3 = document.getElementById('dis1');
+
+            for (let i = 0; i < stack.length; i++) {
+                h3.innerText = `${stack[i]}` + " ,";
+            }
+        }
+        function display2() {
+            let h3 = document.getElementById('dis2');
+
+            for (let i = 0; i < stack.length; i++) {
+                h3.innerText = `${stack[i]}` + " ,";
+            }
+        }*/
+
+        let stack = [];
+        top = stack.length;
+        function push(value) {
+            stack[top ] = value;
+            top ++;
+
+        }
+        function pop() {
+            top --;
+            stack.length = top;
+        }
+        let string = "mummy";
+        let size = string.length;
+        //built in method to convert string to array;split() function
+        string = string.split("");
+        console.log(string);
+
+        for(let i=0;i<size;i++){
+            
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <!-- <div class="rev-string">
+        <input type="text" class="string" id="string" placeholder="enter string to reverse">
+        <button id="string" onclick="push">stack</button>
+    </div>
+    <button id="pop" onclick="revpop">rev_stack</button>
+    <button id="display1" onclick="display1">stack_display</button>
+    <button id="display2" onclick="display2">revstack_display</button>
+    <h3 id="dis1"></h3>
+    <h3 id="dis2"></h3> -->
+</body>
+
+</html>

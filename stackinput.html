@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let stack = [];
+        let currentsize = stack.length;
+        let max = 5;
+        let value = parseInt(document.getElementById('elem').value);
+
+
+        console.log(stack);
+        function is_full() {
+            if (currentsize == max)
+                return currentsize == max;
+        }
+        function is_empty() {
+
+            if (currentsize == 0)
+                return currentsize == 0;
+        }
+        function push(value) {
+            if (is_full()) {
+                alert("you cannot add " + value + "  as stack is full ");
+            }
+            if (currentsize < max) {
+                stack[currentsize] = value;
+                alert(value + "pushed");
+                currentsize++;
+            }
+        }
+        function pop() {
+            if (is_empty()) {
+                alert("you cannot pop " + stack.pop() + "element as stack is empty");
+            }
+            if (currentsize > 0) {
+                let popped = stack.pop();
+                alert(popped + "popped ")
+                currentsize--;
+            }
+        }
+        let pushbtn = document.getElementById('push');
+        let popbtn = document.getElementById('pop');
+        pushbtn.addEventListener("click", () => {
+            push(value);
+        });
+        popbtn.addEventListener("click", () => {
+            pop();
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>Stack Implementation and operations on it
+        </h2>
+    </div>
+    <div class=" d-flex container-fluid background-light text-dark ">
+        <div class="row my-3">
+            <div class="col text-center p-2">
+                <h3>Wanna Push</h3>
+                <input type="text" name="" id="elem" placeholder="Enter the element to push into a stack">
+                <button class="bg-primary p-1" id="push">PUSH</button>
+            </div>
+            <div class="col text-center p-2">
+                <h3>wanna pop</h3>
+                <button class="bg-primary p-2" id="pop">POP</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

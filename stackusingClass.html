@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Stack {
+            item = [];
+            top;
+            max;
+            constructor(size) {
+                this.max = size;
+                this.top = this.item.length;
+            }
+            push(value) {
+                if (this.top >= this.max) {
+                    alert("stak is full");
+
+                }
+
+                else
+                    this.item[this.top] = value;
+                this.top++;
+
+            }
+
+            pop() {
+                if (this.top <= 0) {
+                    alert("stack is Empty");
+                }
+                else {
+                    this.top--;
+                    this.item.length = this.top;
+                }
+
+            }
+            display() {
+                console.log(this.item);
+
+            }
+        }
+
+
+        st1 = new Stack(5);
+        st1.push(3);
+        st1.display();
+st1
+
+    </script>
+</head>
+
+<body>
+
+    <h3>stack with class</h3>
+</body>
+
+</html>

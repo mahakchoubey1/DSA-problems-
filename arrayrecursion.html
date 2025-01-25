@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>// function test(x) {
+        //     console.log(x);
+        //     if (x > 0) {
+        //         test(x - 1);
+        //     }
+        //     console.log(x);
+        // }
+        // let data = 5;
+        // test(data);
+        
+        // function fact(n) {
+        //     if (n > 0) {
+        //         return n * fact(n - 1);
+        //     }
+        //     else
+        //         return 1;
+        // }
+        
+        // console.log(fact(5));
+        
+        
+        // function one() {
+        //     console.log('this a function one');
+        //     console.log('this a function one');
+        
+        // }
+        // function two() {
+        //     console.log('this a function two');
+        //     one();
+        //     console.log('this a function two');
+        
+        // }
+        // function three() {
+        //     console.log('this a function three');
+        //     two();
+        //     console.log('this a function three');
+        
+        // }
+        // function four() {
+        //     console.log('this a function four');
+        //     three();
+        //     console.log('this a function four');
+        // }
+        
+        // four();
+        
+        //because of call stack 
+        
+        
+        // this a function four
+        // this a function three
+        // this a function two
+        // this a function one
+        // this a function one
+        // this a function two
+        // this a function three
+        // this a function four
+        
+        
+        
+        // 
+        function anshu(){
+            console.log("jaa saman le kar aaja");
+        }
+        function khushi() {
+        
+            console.log('anshu ko bulao');
+            anshu();
+            console.log('saman le kar aao');
+        
+        }
+        function mahak() {
+            console.log('calling khushi ');
+            khushi();
+            console.log('help karo');
+        
+        }
+        function chhavi() {
+            console.log('calling mahak');
+            mahak();
+            console.log('mahak se banvao');
+        
+        }
+        function papa() {
+            console.log('calling chhavi');
+            chhavi();
+            console.log('chaavi khana banao');
+        }
+        
+        
+        console.log(" Friend :: calling Rakesh are rakesh chal aaj tere ghar pe khana khate hai");
+        papa();
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
+
